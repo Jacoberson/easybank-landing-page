@@ -3,9 +3,11 @@ import desktopIntro from "../images/bg-intro-desktop.svg";
 import mobileIntro from "../images/bg-intro-mobile.svg";
 import mockups from "../images/image-mockups.png";
 
-const Header = () => {
+const Header = ({ visible }) => {
   return (
-    <header className="relative flex flex-col justify-between lg:flex-row lg:justify-end">
+    <header
+      id={visible && "header-opened-menu"}
+      className="relative flex flex-col justify-between lg:flex-row lg:justify-end">
       <img
         className="w-screen visible lg:invisible"
         src={mobileIntro}

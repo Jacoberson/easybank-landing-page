@@ -11,7 +11,7 @@ const Nav = () => {
   const closeMenu = () => setVisible(false);
 
   return (
-    <div className="relative w-screen h-16 flex justify-between items-center relative bg-neutral-white z-10">
+    <div className="relative w-screen h-16 flex justify-between items-center bg-neutral-white z-10">
       <img className="absolute left-5" src={logo} alt="logo" />
       <div className="absolute right-5 visible lg:invisible">
         {visible ? (
@@ -21,7 +21,7 @@ const Nav = () => {
               alt="opened menu"
               onClick={() => closeMenu()}
             />
-            <nav className="w-9/12 h-auto container flex flex-col items-center absolute">
+            <nav className="absolute -right-5 top-16 w-screen h-auto flex flex-col items-center justify-evenly m-auto bg-neutral-white z-10">
               <p className="text-body leading-21 tracking-tight">Home</p>
               <p className="text-body leading-21 tracking-tight">About</p>
               <p className="text-body leading-21 tracking-tight">Contact</p>

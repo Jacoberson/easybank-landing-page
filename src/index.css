@@ -8,3 +8,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.gradient-btn {
+  background: linear-gradient(
+    to bottom right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  color: hsl(0, 0%, 100%);
+  border-radius: 23px;
+  width: 163px;
+  height: 44px;
+}

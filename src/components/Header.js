@@ -1,38 +1,26 @@
-import React, { useState } from "react";
-import logo from "../images/logo.svg";
-import openedMenu from "../images/icon-hamburger.svg";
-import closedMenu from "../images/icon-close.svg";
+import React from "react";
+import desktopIntro from "../images/bg-intro-desktop.svg";
+import mobileIntro from "../images/bg-intro-mobile.svg";
+import mockups from "../images/image-mockups.png";
 
 const Header = () => {
-  const [visible, setVisible] = useState(false);
-
-  const openMenu = () => setVisible(true);
-
-  const closeMenu = () => setVisible(false);
-
   return (
-    <div className="w-screen flex justify-between items-center relative top-5">
-      <img className="relative left-5" src={logo} alt="logo" />
-      <div className="relative right-5 visible lg:invisible">
-        {visible ? (
-          <>
-            <img
-              src={closedMenu}
-              alt="closed menu"
-              onClick={() => closeMenu()}
-            />
-            <nav className="w-9/12 h-auto container flex flex-col items-center absolute">
-              <p className="text-body leading-21 tracking-tight">Home</p>
-              <p className="text-body leading-21 tracking-tight">About</p>
-              <p className="text-body leading-21 tracking-tight">Contact</p>
-              <p className="text-body leading-21 tracking-tight">Blog</p>
-              <p className="text-body leading-21 tracking-tight">Careers</p>
-            </nav>
-          </>
-        ) : (
-          <img src={openedMenu} alt="opened menu" onClick={() => openMenu()} />
-        )}
-      </div>
+    <div className="relative flex flex-col justify-between lg:flex-row lg:justify-end">
+      <img
+        className="w-screen visible lg:invisible"
+        src={mobileIntro}
+        alt="intro"
+      />
+      <img
+        className="w-screen invisible lg:visible absolute"
+        src={desktopIntro}
+        alt="intro"
+      />
+      <img
+        className="w-screen absolute bottom-20 z-0"
+        src={mockups}
+        alt="mockups"
+      />
     </div>
   );
 };

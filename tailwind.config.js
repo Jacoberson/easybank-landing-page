@@ -30,16 +30,20 @@ module.exports = {
     fontSize: {
       small: "15px",
       body: "18px",
-      large: "40px",
+      medium: "20px",
+      large: "32px",
+      larger: "40px",
     },
     lineHeight: {
       21: "21.15px",
       25: "25px",
+      28: "28px",
       47: "47px",
     },
     letterSpacing: {
       tight: "-0.14px",
       "tight-23": "-0.23px",
+      "tight-36": "-0.36px",
       tighter: "-0.71px",
     },
   },

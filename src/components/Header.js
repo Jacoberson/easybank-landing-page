@@ -5,7 +5,7 @@ import mockups from "../images/image-mockups.png";
 
 const Header = () => {
   return (
-    <div className="relative flex flex-col justify-between lg:flex-row lg:justify-end">
+    <header className="relative flex flex-col justify-between lg:flex-row lg:justify-end">
       <img
         className="w-screen visible lg:invisible"
         src={mobileIntro}
@@ -21,7 +21,7 @@ const Header = () => {
         src={mockups}
         alt="mockups"
       />
-    </div>
+    </header>
   );
 };
 

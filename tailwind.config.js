@@ -28,13 +28,19 @@ module.exports = {
       700: 700,
     },
     fontSize: {
+      small: "15px",
       body: "18px",
+      large: "40px",
     },
     lineHeight: {
       21: "21.15px",
+      25: "25px",
+      47: "47px",
     },
     letterSpacing: {
       tight: "-0.14px",
+      "tight-23": "-0.23px",
+      tighter: "-0.71px",
     },
   },
   variants: {

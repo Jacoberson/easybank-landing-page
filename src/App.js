@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import NextGen from "./components/NextGen";
 import WhyChoose from "./components/WhyChoose";
 import LatestArticles from "./components/LatestArticles";
+import Footer from "./components/Footer";
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -15,6 +16,7 @@ function App() {
       <NextGen />
       <WhyChoose />
       <LatestArticles />
+      <Footer />
     </div>
   );
 }
